@@ -33,22 +33,16 @@ build/
 .vscode/
 
 # --- Maven ---
-target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.next
-pom.xml.releaseBackup
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
 
 # --- IntelliJ IDEA ---
 .idea/
-*.iws
-*.iml
-*.ipr
 /workspace.xml
 /misc.xml
 
