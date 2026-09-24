@@ -53,7 +53,6 @@ public class Reto {
         return fechaLimite;
     }
 
-    /** XP que otorga este reto, derivada de su dificultad (no se guarda por separado). */
     public int getExperienciaOtorgada() {
         return dificultad.getExperienciaOtorgada();
     }
@@ -66,22 +65,49 @@ public class Reto {
         return estado == EstadoReto.ACTIVO;
     }
 
-    /** Regla central de la sección 5: un reto solo puede aceptarse si está activo y no ha vencido. */
     public boolean puedeAceptarse() {
         return estaActivo() && !estaVencido();
     }
 
-    public void activar() { this.estado = EstadoReto.ACTIVO; }
-    public void desactivar() { this.estado = EstadoReto.INACTIVO; }
+    public void activar() {
+        this.estado = EstadoReto.ACTIVO;
+    }
 
-    public Long getId() { return id; }
-    public String getTitulo() { return titulo; }
-    public String getDescripcion() { return descripcion; }
-    public Categoria getCategoria() { return categoria; }
-    public Dificultad getDificultad() { return dificultad; }
-    public LocalDateTime getFechaCreacion() { return fechaCreacion; }
-    public LocalDateTime getFechaLimite() { return fechaLimite; }
-    public EstadoReto getEstado() { return estado; }
+    public void desactivar() {
+        this.estado = EstadoReto.INACTIVO;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public Dificultad getDificultad() {
+        return dificultad;
+    }
+
+    public LocalDateTime getFechaCreacion() {
+        return fechaCreacion;
+    }
+
+    public LocalDateTime getFechaLimite() {
+        return fechaLimite;
+    }
+
+    public EstadoReto getEstado() {
+        return estado;
+    }
 
     @Override
     public boolean equals(Object object) {
