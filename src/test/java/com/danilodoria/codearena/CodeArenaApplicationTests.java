@@ -1,0 +1,13 @@
+package com.danilodoria.codearena;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class CodeArenaApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
