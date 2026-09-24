@@ -1,8 +1,6 @@
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
 ### STS ###
 .apt_generated
@@ -32,25 +30,37 @@ build/
 ### VS Code ###
 .vscode/
 
-# --- Maven ---
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
+# --- Carpeta de compilación (Maven) ---
+target/
 
-# --- IntelliJ IDEA ---
+# --- Configuraciones locales de IntelliJ IDEA ---
 .idea/
 /workspace.xml
 /misc.xml
+*.iws
+*.iml
+*.ipr
 
-# --- Log files ---
-*.log
-logs/
+# --- Maven Wrapper (Opcional, previene binarios) ---
+.mvn/wrapper/maven-wrapper.jar
 
-# --- Sistema Operativo ---
+# --- Archivos de otros editores (STS, VS Code, NetBeans) ---
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+.vscode/
+
+# --- Archivos del Sistema Operativo ---
 .DS_Store
 Thumbs.db
-
+*.log
