@@ -10,10 +10,16 @@ import java.util.Optional;
 
 public interface RetoRepositoryPort {
     Reto guardar(Reto reto);
+
     Optional<Reto> buscarPorId(Long id);
+
     ResultadoPaginado<Reto> buscarTodos(PaginaSolicitud solicitud);
+
     ResultadoPaginado<Reto> buscarTodosActivos(PaginaSolicitud solicitud);
+
     ResultadoPaginado<Reto> buscarPorDificultad(Dificultad dificultad, PaginaSolicitud solicitud);
+
     ResultadoPaginado<Reto> buscarPorCategoria(Long categoriaId, PaginaSolicitud solicitud);
+
     ResultadoPaginado<Reto> buscarProximosAVencer(LocalDateTime antesDe, PaginaSolicitud solicitud);
 }
