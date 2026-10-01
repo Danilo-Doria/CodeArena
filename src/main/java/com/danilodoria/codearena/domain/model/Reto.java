@@ -109,6 +109,15 @@ public class Reto {
         return estado;
     }
 
+    public void actualizarDatos(String titulo, String descripcion, Categoria categoria,
+                                Dificultad dificultad, LocalDateTime fechaLimite) {
+        this.titulo = requireNoVacio(titulo, "El título es obligatorio");
+        this.descripcion = descripcion;
+        this.categoria = Objects.requireNonNull(categoria, "La categoría es obligatoria");
+        this.dificultad = Objects.requireNonNull(dificultad, "La dificultad es obligatoria");
+        this.fechaLimite = validarFechaLimite(fechaLimite, this.fechaCreacion);
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

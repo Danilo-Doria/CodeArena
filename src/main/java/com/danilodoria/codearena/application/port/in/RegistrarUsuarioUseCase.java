@@ -1,6 +1,5 @@
-package com.danilodoria.codearena.domain.port.in;
+package com.danilodoria.codearena.application.port.in;
 
-import com.danilodoria.codearena.domain.model.Rol;
 import com.danilodoria.codearena.domain.model.Usuario;
 
 public interface RegistrarUsuarioUseCase {

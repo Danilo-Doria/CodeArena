@@ -1,4 +1,4 @@
-package com.danilodoria.codearena.domain.port.in;
+package com.danilodoria.codearena.application.port.in;
 
 public interface AutenticarUsuarioUseCase {
     ResultadoAutenticacion autenticarUsuario(String email, String password);

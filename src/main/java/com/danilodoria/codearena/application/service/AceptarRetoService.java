@@ -1,4 +1,4 @@
-package com.danilodoria.codearena.domain.service;
+package com.danilodoria.codearena.application.service;
 
 import com.danilodoria.codearena.domain.exception.ParticipacionDuplicadaException;
 import com.danilodoria.codearena.domain.exception.RetoNoEncontradoException;
@@ -6,10 +6,10 @@ import com.danilodoria.codearena.domain.exception.UsuarioNoEncontradoException;
 import com.danilodoria.codearena.domain.model.Participacion;
 import com.danilodoria.codearena.domain.model.Reto;
 import com.danilodoria.codearena.domain.model.Usuario;
-import com.danilodoria.codearena.domain.port.in.AceptarRetoUseCase;
-import com.danilodoria.codearena.domain.port.out.ParticipacionRepositoryPort;
-import com.danilodoria.codearena.domain.port.out.RetoRepositoryPort;
-import com.danilodoria.codearena.domain.port.out.UsuarioRepositoryPort;
+import com.danilodoria.codearena.application.port.in.AceptarRetoUseCase;
+import com.danilodoria.codearena.application.port.out.ParticipacionRepositoryPort;
+import com.danilodoria.codearena.application.port.out.RetoRepositoryPort;
+import com.danilodoria.codearena.application.port.out.UsuarioRepositoryPort;
 
 public class AceptarRetoService implements AceptarRetoUseCase {
     private final UsuarioRepositoryPort usuarioRepositoryPort;
