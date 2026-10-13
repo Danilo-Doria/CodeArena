@@ -10,7 +10,6 @@ import com.danilodoria.codearena.domain.model.Rol;
 import com.danilodoria.codearena.domain.model.Usuario;
 
 public class RegistrarUsuarioService implements RegistrarUsuarioUseCase {
-
     private final UsuarioRepositoryPort usuarioRepositoryPort;
     private final PasswordEncoderPort passwordEncoderPort;
 

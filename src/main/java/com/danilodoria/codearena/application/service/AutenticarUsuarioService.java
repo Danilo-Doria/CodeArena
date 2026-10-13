@@ -6,7 +6,6 @@ import com.danilodoria.codearena.application.port.out.PasswordEncoderPort;
 import com.danilodoria.codearena.application.port.out.TokenProviderPort;
 import com.danilodoria.codearena.application.port.out.UsuarioRepositoryPort;
 import com.danilodoria.codearena.domain.exception.CredencialesInvalidasException;
-import com.danilodoria.codearena.domain.model.EstadoUsuario;
 import com.danilodoria.codearena.domain.model.Usuario;
 
 public class AutenticarUsuarioService implements AutenticarUsuarioUseCase {
