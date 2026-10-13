@@ -55,6 +55,46 @@ public class Usuario {
         this.nivel = Nivel.calcularSegunExperiencia(this.experienciaAcumulada);
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public Rol getRol() {
+        return rol;
+    }
+
+    public Nivel getNivel() {
+        return nivel;
+    }
+
+    public int getExperienciaAcumulada() {
+        return experienciaAcumulada;
+    }
+
+    public EstadoUsuario getEstado() {
+        return estado;
+    }
+
+    public boolean estaActivo() {
+        return this.estado == EstadoUsuario.ACTIVO;
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
