@@ -9,7 +9,7 @@ public class Categoria {
 
     public Categoria(String nombre) {
         this.id = null;
-        this.nombre = requireNoVacio(nombre);
+        this.nombre = normalizar(nombre);
     }
 
     public Categoria(Long id, String nombre) {
@@ -26,6 +26,13 @@ public class Categoria {
 
     public Long getId() { return id; }
     public String getNombre() { return nombre; }
+
+    private static String normalizar(String nombre) {
+        if (nombre == null || nombre.isBlank()) {
+            throw new IllegalArgumentException("El nombre de la categoría es obligatorio");
+        }
+        return nombre.strip().replaceAll("\\s+", " ");
+    }
 
     @Override
     public boolean equals(Object object) {
