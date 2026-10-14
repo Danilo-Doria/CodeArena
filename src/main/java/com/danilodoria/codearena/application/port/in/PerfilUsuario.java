@@ -12,6 +12,6 @@ public record PerfilUsuario(
         Rol rol,
         Nivel nivel,
         int experienciaAcumulada,
-        int retosCompletados,
+        long retosCompletados,
         EstadoUsuario estado
 ) {}

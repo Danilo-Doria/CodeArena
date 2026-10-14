@@ -7,5 +7,5 @@ public record RankingEntry(
         String username,
         Nivel nivel,
         int experienciaAcumulada,
-        int retosCompletados
+        long retosCompletados
 ) {}
