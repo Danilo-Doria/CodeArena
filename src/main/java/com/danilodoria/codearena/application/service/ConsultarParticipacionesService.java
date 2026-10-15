@@ -10,7 +10,7 @@ import com.danilodoria.codearena.domain.model.utils.ResultadoPaginado;
 public class ConsultarParticipacionesService implements ConsultarParticipacionesUseCase {
     private final ParticipacionRepositoryPort participacionRepositoryPort;
 
-    public ConsultarParticipacionesService(ParticipacionRepositoryPort participacionRepositoryPort, UsuarioRepositoryPort usuarioRepositoryPort) {
+    public ConsultarParticipacionesService(ParticipacionRepositoryPort participacionRepositoryPort) {
         this.participacionRepositoryPort = participacionRepositoryPort;
     }
 
