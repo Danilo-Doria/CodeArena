@@ -2,7 +2,6 @@ package com.danilodoria.codearena.application.service;
 
 import com.danilodoria.codearena.application.port.in.ConsultarParticipacionesUseCase;
 import com.danilodoria.codearena.application.port.out.ParticipacionRepositoryPort;
-import com.danilodoria.codearena.application.port.out.UsuarioRepositoryPort;
 import com.danilodoria.codearena.domain.model.Participacion;
 import com.danilodoria.codearena.domain.model.utils.PaginaSolicitud;
 import com.danilodoria.codearena.domain.model.utils.ResultadoPaginado;
