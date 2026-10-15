@@ -12,7 +12,6 @@ public class ConsultarParticipacionesService implements ConsultarParticipaciones
 
     public ConsultarParticipacionesService(ParticipacionRepositoryPort participacionRepositoryPort, UsuarioRepositoryPort usuarioRepositoryPort) {
         this.participacionRepositoryPort = participacionRepositoryPort;
-        this.usuarioRepositoryPort = usuarioRepositoryPort;
     }
 
     @Override
