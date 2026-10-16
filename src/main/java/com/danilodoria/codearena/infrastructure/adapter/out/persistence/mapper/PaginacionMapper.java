@@ -15,7 +15,6 @@ public final class PaginacionMapper {
     }
 
     public static PageRequest toPageRequest(PaginaSolicitud solicitud) {
-        // Sin ORDER BY, PostgreSQL no garantiza el orden entre páginas
         return PageRequest.of(solicitud.pagina(), solicitud.tamano(), Sort.by("id"));
     }
 

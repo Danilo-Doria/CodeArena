@@ -8,17 +8,17 @@ import org.springframework.stereotype.Component;
 public class UsuarioEntityMapper {
 
     public UsuarioEntity toEntity(Usuario usuario) {
-        UsuarioEntity entity = new UsuarioEntity();
-        entity.setId(usuario.getId());
-        entity.setNombre(usuario.getNombre());
-        entity.setUsername(usuario.getUsername());
-        entity.setEmail(usuario.getEmail());
-        entity.setPassword(usuario.getPassword());
-        entity.setRol(usuario.getRol());
-        entity.setNivel(usuario.getNivel());
-        entity.setExperienciaAcumulada(usuario.getExperienciaAcumulada());
-        entity.setEstado(usuario.getEstado());
-        return entity;
+        return UsuarioEntity.builder()
+                .id(usuario.getId())
+                .nombre(usuario.getNombre())
+                .username(usuario.getUsername())
+                .email(usuario.getEmail())
+                .password(usuario.getPassword())
+                .rol(usuario.getRol())
+                .nivel(usuario.getNivel())
+                .experienciaAcumulada(usuario.getExperienciaAcumulada())
+                .estado(usuario.getEstado())
+                .build();
     }
 
     public Usuario toDomain(UsuarioEntity entity) {

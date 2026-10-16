@@ -4,10 +4,7 @@ import com.danilodoria.codearena.domain.model.EstadoUsuario;
 import com.danilodoria.codearena.domain.model.Nivel;
 import com.danilodoria.codearena.domain.model.Rol;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Table(
@@ -18,8 +15,9 @@ import lombok.Setter;
         }
 )
 @Getter
-@Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@Builder
 public class UsuarioEntity {
 
     @Id
