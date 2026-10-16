@@ -53,13 +53,16 @@ public class Participacion {
         this.estado = EstadoParticipacion.SUBMITTED;
     }
 
-    public void aprobar() {
+    public void aprobar(int experienciaObtenida) {
         if (estado != EstadoParticipacion.SUBMITTED) {
             throw new IllegalStateException(
                     "Solo se puede aprobar una participación en estado SUBMITTED (actual: " + estado + ")");
         }
+        if (experienciaObtenida <= 0) {
+            throw new IllegalArgumentException("La experiencia obtenida debe ser positiva");
+        }
         this.estado = EstadoParticipacion.APPROVED;
-        this.experienciaObtenida = reto.getExperienciaOtorgada();
+        this.experienciaObtenida = experienciaObtenida;
     }
 
     public void rechazar() {
