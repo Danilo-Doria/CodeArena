@@ -1,0 +1,14 @@
+package com.danilodoria.codearena.domain.logro;
+
+public class PrimerRetoCompletado implements ReglaLogro {
+
+    @Override
+    public String nombreLogro() {
+        return "Primer reto completado";
+    }
+
+    @Override
+    public boolean seCumple(ContextoLogro contexto) {
+        return contexto.retosCompletados() >= 1;
+    }
+}
